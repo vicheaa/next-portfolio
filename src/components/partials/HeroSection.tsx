@@ -26,27 +26,27 @@ const HeroSection = () => {
           /> */}
         </div>
         <div className="mt-4  flex gap-5">
-          <Link href="https://www.instragram.com">
+          <Link href="https://www.instragram.com" legacyBehavior>
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiInstagram size={25} />
             </a>
           </Link>
-          <Link href="https://www.twitter.com">
+          <Link href="https://www.twitter.com" legacyBehavior> 
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiTwitter size={25} />
             </a>
           </Link>
-          <Link href="https://www.facebook.com">
+          <Link href="https://www.facebook.com" legacyBehavior>
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiFacebook size={25} />
             </a>
           </Link>
-          <Link href="https://www.dribble.com">
+          <Link href="https://www.dribble.com" legacyBehavior>
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiDribbble size={25} />
             </a>
           </Link>
-          <Link href="https://www.github.com">
+          <Link href="https://www.github.com" legacyBehavior>
             <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
               <FiGithub size={25} />
             </a>

@@ -34,25 +34,17 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></article>
           <div className="mt-10  flex">
-            <Link href="#">
-              <a>
+            <Link href="#" legacyBehavior>
                 <FiTwitter className="mr-3" />
-              </a>
             </Link>
-            <Link href="#">
-              <a>
+            <Link href="#" legacyBehavior>
                 <FiFacebook className="mx-3" />
-              </a>
             </Link>
-            <Link href="#">
-              <a>
+            <Link href="#" legacyBehavior>
                 <FiLinkedin className="mx-3" />
-              </a>
             </Link>
-            <Link href="#">
-              <a>
+            <Link href="#" legacyBehavior>
                 <FiMail className="mx-3" />
-              </a>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8">

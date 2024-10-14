@@ -4,7 +4,7 @@ import React from 'react';
 import { FiDribbble, FiFacebook, FiGithub, FiInstagram, FiTwitter } from 'react-icons/fi';
 import Button from '@/components/form/Button';
 import HeroBackground from './HeroBackground';
-// import Typed from 'react-typed';
+import { Typewriter } from 'react-simple-typewriter';
 
 const HeroSection = () => {
   return (
@@ -18,12 +18,17 @@ const HeroSection = () => {
         <div className="mt-2 flex gap-1">
           {' '}
           I'm a{' '}
-          {/* <Typed
-            strings={['Fullstack Developer', 'UI/UX Designer', 'Mobile App Developer']}
-            typeSpeed={60}
-            backSpeed={30}
-            loop
-          /> */}
+            <span>
+              <Typewriter
+                words={['Fullstack Developer', 'UI/UX Designer', 'Mobile App Developer']}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+          </span>
         </div>
         <div className="mt-4  flex gap-5">
           <Link href="https://www.instragram.com" legacyBehavior>

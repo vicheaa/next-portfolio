@@ -21,7 +21,7 @@ const HeroSection = () => {
             width={2000} 
             height={2000} 
             alt="avatar" 
-            className='w-[20vw]'
+            className='w-[60vw] sm:w-[20vw] md:w-[25vw]'
           />
         </div>
         <h1 className="mt-4 text-3xl font-bold flex flex-col sm:flex-row">

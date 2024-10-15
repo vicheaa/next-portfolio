@@ -1,4 +1,5 @@
 import { Theme, useTheme } from '@/hooks/use-theme';
+import { Dialog, Transition } from '@headlessui/react';
 // import { Dialog, Switch, Transition } from '@headlessui/react';
 import classNames from 'classnames';
 import Link from 'next/link';
@@ -81,7 +82,7 @@ const Menu = () => {
       </div>
 
       {/* Mobile menu */}
-      {/* <Transition.Root show={sidebarOpen} as={Fragment}>
+      <Transition.Root show={sidebarOpen} as={Fragment}>
         <Dialog as="div" className="fixed inset-0 z-40 flex md:hidden" onClose={setSidebarOpen}>
           <Transition.Child
             as={Fragment}
@@ -125,15 +126,15 @@ const Menu = () => {
               </Transition.Child>
               <div className="flex h-full flex-col overflow-y-auto">
                 <div className="border-b px-2 pb-4 dark:border-gray-700">
-                  <Link href="/">
+                  <Link href="/" legacyBehavior>
                     <a className="text-3xl  font-bold">
-                      <span>Pofology</span>
+                      <span>Vichea</span>
                       <span className="text-primary-500">.</span>
                     </a>
                   </Link>
                 </div>
                 <nav className="mt-4 space-y-1 px-2">
-                  <Link href="/works">
+                  <Link href="/works" legacyBehavior>
                     <a
                       className={classNames(
                         'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600',
@@ -143,7 +144,7 @@ const Menu = () => {
                       Works
                     </a>
                   </Link>
-                  <Link href="/blog">
+                  <Link href="/blog" legacyBehavior>
                     <a
                       className={classNames(
                         { 'text-primary-500': router.asPath == '/blog' },
@@ -153,7 +154,7 @@ const Menu = () => {
                       Blog
                     </a>
                   </Link>
-                  <Link href="/contact">
+                  <Link href="/contact" legacyBehavior>
                     <a
                       className={classNames(
                         { 'text-primary-500': router.asPath == '/contact' },
@@ -168,7 +169,7 @@ const Menu = () => {
             </div>
           </Transition.Child>
         </Dialog>
-      </Transition.Root> */}
+      </Transition.Root>
     </header>
   );
 };

@@ -5,6 +5,7 @@ import ExperienceSection from '@/components/partials/ExperienceSection';
 import HeroSection from '@/components/partials/HeroSection';
 import RecentWorkSection from '@/components/partials/RecentWorkSection';
 import ServiceSection from '@/components/partials/ServiceSection';
+import TechnologiesSection from '@/components/partials/TechnologiesSection';
 import TestimonialSection from '@/components/partials/TestimonialSection';
 import AppLayout from '@/layouts/AppLayout';
 // import { api } from '@/lib/api';
@@ -20,6 +21,9 @@ const Home: NextPage = () => {
       <HeroSection />
       <section className="container pt-20 pb-10">
         <AboutSection />
+      </section>
+      <section className="container py-16">
+        <TechnologiesSection />
       </section>
       <section className="container py-16">
         <ExperienceSection />

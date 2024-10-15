@@ -7,9 +7,11 @@
 @import 'partials/vendor';
 @import 'partials/utils';
 @import 'partials/components';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Noto+Sans+Khmer:wght@100..900&display=swap');
 
 body {
-  @apply bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-100;
+  @apply bg-gray-100 text-gray-700 dark:bg-black dark:text-gray-100;
   overflow-x: hidden;
 }
 

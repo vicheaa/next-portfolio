@@ -1,30 +1,32 @@
-import { Experience } from "@/types";
+import { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
-    jobTitle: "Frontend Developer",
-    company: "Google LLC",
-    startDate: "Jan 2017",
-    endDate: "Dec 2018",
-    description:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+    jobTitle: 'Full stack Developer',
+    company: 'One Fraternity',
+    startDate: 'Jul 2024',
+    endDate: 'Sep 2024',
+    description: 'Hand on Gate Pass Management System as an Internship.',
   },
-
   {
-    jobTitle: "Fullstack Developer",
-    company: "Amazon Inc.",
-    startDate: "Jan 2019",
-    endDate: "Dec 2021",
-    description:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+    jobTitle: 'Web development',
+    company: 'Institute of Technology of Cambodia',
+    startDate: 'May 2024',
+    endDate: 'Jul 2024',
+    description: 'Build POS website for school project.',
   },
-
   {
-    jobTitle: "Senior Fullstack Developer",
-    company: "Facebook Inc.",
-    startDate: "Jan 2022",
-    endDate: "Present",
-    description:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+    jobTitle: 'Web development',
+    company: 'Institute of Technology of Cambodia',
+    startDate: 'Oct 2023',
+    endDate: 'Jan 2024',
+    description: 'Build Coffee Shop e-commerce website for school project.',
+  },
+  {
+    jobTitle: 'IT support',
+    company: 'Camtesol 19th Volunteer',
+    startDate: 'Feb 2023',
+    endDate: 'Feb 2023',
+    description: 'Operate slides for presenters and real-time troubleshoot.',
   },
 ];

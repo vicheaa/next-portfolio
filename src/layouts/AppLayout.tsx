@@ -4,6 +4,7 @@ import Menu from '@/components/partials/Menu';
 import Footer from '@/components/partials/Footer';
 import ScrollToTop from 'react-scroll-to-top';
 import { FiArrowUp } from 'react-icons/fi';
+import Image from 'next/image';
 
 interface Props {
   title?: string;
@@ -11,12 +12,13 @@ interface Props {
 }
 
 const AppLayout: React.FC<Props> = ({ children, title }) => {
-  const appName = process.env.NEXT_PUBLIC_APP_NAME || 'Pofology';
-  const pageTitle = title ? `${title} - ${appName}` : appName;
+  const appName = process.env.NEXT_PUBLIC_APP_NAME || 'Vichea';
+  const pageTitle = title ? `${title}-${appName}` : appName;
   return (
     <>
       <Head>
         <title>{pageTitle}</title>
+        <link rel="icon" href="/images/IMG_0247.jpg" />
       </Head>
       <div className="flex min-h-screen flex-col">
         <ScrollToTop

@@ -5,6 +5,9 @@ import { HiOutlineChartBar, HiOutlineFire, HiOutlineUsers } from 'react-icons/hi
 import ProgressBar from '@/components/shared/ProgressBar';
 
 const AboutSection = () => {
+  const getCV = () => {
+    window.open('https://drive.google.com/file/d/1G8hoT9NTHKOqgQwGTYNI5ibBFUK0edf6/view?usp=sharing', '_blank', 'noopener,noreferrer');
+  }
   return (
     <>
       <SectionTitle>About Me</SectionTitle>
@@ -13,10 +16,12 @@ const AboutSection = () => {
         {/* Bio */}
         <div className="">
           <p className="text-justify">
-            Hi, I am Md Mostafizur Rahman, I am a fullstack developer. I work from Dhaka, Bangladesh. I have rich
-            experience in building, designing & customizing website, web apps, mobile apps etc.
+            Hi, I am SARO Sereyvichea, an ICT student with a passion for web development.
+            Currently pursuing my degree in Information and Communication Technology, 
+            I have gained hands-on experience in building dynamic web applications 
+            using technologies like Next.js, React, and Laravel.
           </p>
-          <Button className="mt-5">Download CV</Button>
+          <Button className="mt-5" onClick={getCV}>Download CV</Button>
         </div>
 
         {/* Skills */}
@@ -24,31 +29,31 @@ const AboutSection = () => {
           <div className="">
             <div className="mb-3 flex justify-between">
               <h6 className="font-semibold">Backend</h6>
-              <p>85%</p>
+              {/* <p>85%</p> */}
             </div>
             <ProgressBar color="blue" progress={85} />
           </div>
           <div className="">
             <div className="mb-3 flex justify-between">
               <h6 className="font-semibold">Frontend</h6>
-              <p>95%</p>
+              {/* <p>95%</p> */}
             </div>
-            <ProgressBar color="amber" progress={95} />
+            <ProgressBar color="amber" progress={70} />
           </div>
 
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Mobile App</h6>
-              <p>75%</p>
+              <h6 className="font-semibold">Database</h6>
+              {/* <p>75%</p> */}
             </div>
             <ProgressBar color="rose" progress={75} />
           </div>
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">UI/UX</h6>
-              <p>90%</p>
+              <h6 className="font-semibold">DevOps</h6>
+              {/* <p>90%</p> */}
             </div>
-            <ProgressBar color="green" progress={80} />
+            <ProgressBar color="green" progress={70} />
           </div>
         </div>
       </div>

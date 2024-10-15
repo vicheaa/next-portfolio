@@ -1,0 +1,26 @@
+.technologies-section {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+  
+    .technologies-wrapper {
+      display: flex;
+      gap: 10px;
+      width: max-content; // Ensure it only takes necessary space
+    }
+  
+    .technology {
+      background-color: #f0f0f0;
+      padding: 10px 20px;
+      border-radius: 8px;
+      white-space: nowrap; // Prevent text from wrapping
+      flex-shrink: 0; // Prevent shrinking
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Optional: hide scrollbar */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  

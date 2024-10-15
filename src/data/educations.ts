@@ -1,28 +1,25 @@
-import { Education } from "@/types";
+import { Education } from '@/types';
 
 export const educations: Education[] = [
   {
-    degree: "Bachelor of Science",
-    school: "University of California",
-    startDate: "Jan 2017",
-    endDate: "Dec 2018",
-    description:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+    degree: 'Engineering of Computer Science',
+    school: 'Institute of Technology of Cambodia.',
+    startDate: '2020',
+    endDate: 'Present',
+    description: '',
   },
   {
-    degree: "Master of Science",
-    school: "University of California",
-    startDate: "Jan 2019",
-    endDate: "Dec 2021",
-    description:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+    degree: 'General English Program',
+    school: 'Australian Centre of Education',
+    startDate: '2019',
+    endDate: '2023',
+    description: 'Graduated at ACE with IELTS certificate.',
   },
   {
-    degree: "Doctor of Philosophy",
-    school: "University of California",
-    startDate: "Jan 2022",
-    endDate: "Present",
-    description:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+    degree: 'Secondary Education',
+    school: 'Mahasastra',
+    startDate: '2015',
+    endDate: '2020',
+    description: 'Graduated from High school.',
   },
 ];

@@ -1,21 +1,23 @@
 import React from 'react';
 import SectionTitle from '../shared/SectionTitle';
+import { FaLaravel, FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaReact, FaDatabase } from 'react-icons/fa';
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma, SiLumen } from 'react-icons/si';
 
 export default function TechnologiesSection() {
   const technologies = [
-    'HTML',
-    'CSS',
-    'PHP',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'SQL',
-    'Next.js',
-    'Node.js',
-    'Laravel',
-    'Lumen',
-    'Tailwind CSS',
-    'Prisma',
+    { name: 'HTML', icon: <FaHtml5 /> },
+    { name: 'CSS', icon: <FaCss3Alt /> },
+    { name: 'PHP', icon: <FaLaravel /> }, // You can use another icon for PHP
+    { name: 'JavaScript', icon: <FaJsSquare /> },
+    { name: 'TypeScript', icon: <SiTypescript /> },
+    { name: 'React', icon: <FaReact /> },
+    { name: 'SQL', icon: <FaDatabase /> }, // You can choose an appropriate SQL icon
+    { name: 'Next.js', icon: <SiNextdotjs /> },
+    { name: 'Node.js', icon: <FaNodeJs /> },
+    { name: 'Laravel', icon: <FaLaravel /> },
+    { name: 'Lumen', icon: <SiLumen /> }, // You can choose a different icon for Lumen
+    { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+    { name: 'Prisma', icon: <SiPrisma /> },
   ];
 
   return (
@@ -29,17 +31,25 @@ export default function TechnologiesSection() {
         }}
       >
         <div
-          className="flex space-x-4 w-max animate-scroll" 
+          className="flex space-x-4 w-max animate-scroll"
           style={{
-            animation: 'scroll 20s linear infinite',
+            animation: 'scroll 50s linear infinite',
+            animationPlayState: 'running', // Default state
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.animationPlayState = 'paused'; // Pause on hover
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.animationPlayState = 'running'; // Resume when hover ends
           }}
         >
           {technologies.concat(technologies).map((tech, index) => (
             <div
               key={index}
-              className="px-6 py-2 rounded-lg shadow-sm whitespace-nowrap flex-shrink-0"
+              className="px-6 whitespace-nowrap flex-shrink-0 flex flex-col items-center"
             >
-              {tech}
+              <div className="text-2xl">{tech.icon}</div>
+              <span className="text-sm">{tech.name}</span>
             </div>
           ))}
         </div>
@@ -55,12 +65,7 @@ export default function TechnologiesSection() {
         }
 
         .animate-scroll {
-          animation: scroll 20s linear infinite;
-        }
-
-        /* Pause the animation when the container is hovered */
-        .animate-scroll:hover {
-          animation-play-state: paused;
+          animation: scroll 50s linear infinite;
         }
       `}</style>
     </>

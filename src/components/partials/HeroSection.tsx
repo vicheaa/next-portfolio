@@ -17,10 +17,11 @@ const HeroSection = () => {
       <div className="flex flex-col items-center">
         <div className="overflow-hidden rounded-full">
           <Image 
-            src="/images/avatar/man.png" 
-            width={180} 
-            height={180} 
+            src="/images/avatar/no_bg.png" 
+            width={2000} 
+            height={2000} 
             alt="avatar" 
+            className='w-[20vw]'
           />
         </div>
         <h1 className="mt-4 text-3xl font-bold flex flex-col sm:flex-row">

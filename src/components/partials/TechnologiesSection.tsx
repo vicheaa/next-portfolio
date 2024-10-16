@@ -24,7 +24,7 @@ export default function TechnologiesSection() {
     <>
       <SectionTitle>Technology</SectionTitle>
       <div
-        className="w-full overflow-x-hidden py-4"
+        className="w-full overflow-x-hidden pt-10"
         style={{
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',

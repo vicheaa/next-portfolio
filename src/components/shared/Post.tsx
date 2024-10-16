@@ -16,7 +16,7 @@ const Post = ({ thumbnailUrl, title, publishedAt, href }: Props) => {
     <div className={classNames(styles['post'], 'bg-white dark:bg-gray-700')}>
       <Link href={href} legacyBehavior> 
         <a className={styles['post-image']}>
-          <Image src={thumbnailUrl} height={384} width={512} layout="responsive" alt={title} />
+          <Image src={thumbnailUrl} height={384} width={512} layout="responsive" alt={title} priority/>
         </a>
       </Link>
       <div className="p-6">

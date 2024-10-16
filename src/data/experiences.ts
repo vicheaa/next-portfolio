@@ -23,6 +23,14 @@ export const experiences: Experience[] = [
     description: 'Build Coffee Shop e-commerce website for school project.',
   },
   {
+    jobTitle: 'Game result',
+    company: 'SEAGAMES-2023',
+    startDate: 'May 2023',
+    endDate: 'Jun 2023',
+    description:
+      'Perform as an IT support. Entry score in real-time to ensure the accurate score for both App lication and website.',
+  },
+  {
     jobTitle: 'IT support',
     company: 'Camtesol 19th Volunteer',
     startDate: 'Feb 2023',

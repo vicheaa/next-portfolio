@@ -29,7 +29,7 @@ const ExperienceSection = () => {
                   <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
                     {experience.company}
                   </p>
-                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-200">
+                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-200 text-justify">
                     {experience.description}
                   </p>
                 </li>
@@ -55,7 +55,7 @@ const ExperienceSection = () => {
                   <p className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-200">
                     {education.school}
                   </p>
-                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-200">{education.description}</p>
+                  <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-200 text-justify">{education.description}</p>
                 </li>
               ))}
             </ol>

@@ -27,10 +27,10 @@ const BlogSingle: React.FunctionComponent<Props> = ({ post }) => {
         </div>
         <div>
           <div className="mt-10 overflow-hidden rounded-xl">
-            <Image src={post.imageUrl} height={720} width={1280} layout="responsive" alt={post.title} />
+            <Image src={post.imageUrl} height={720} width={1280} alt={post.title} />
           </div>
           <article
-            className="prose mt-10 max-w-full dark:prose-invert"
+            className="prose mt-10 max-w-full dark:text-white"
             dangerouslySetInnerHTML={{ __html: post.content }}
           ></article>
           <div className="mt-10  flex">

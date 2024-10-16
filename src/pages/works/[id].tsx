@@ -37,13 +37,13 @@ const WorkDetail: React.FunctionComponent<Props> = ({ work }) => {
           </p>
         </div>
         <div className="mt-10">
-          <Slider {...settings}>
+          {/* <Slider {...settings}>
             {work.images.map((image, index) => (
               <div className="overflow-hidden rounded-xl" key={index}>
                 <Image src={image} height={720} width={1280} layout="responsive" alt={work.title} />
               </div>
             ))}
-          </Slider>
+          </Slider> */}
           <div className="mt-6 flex justify-center">
             <Link href={work.previewUrl} legacyBehavior>
               <a className="btn">Live Preview</a>

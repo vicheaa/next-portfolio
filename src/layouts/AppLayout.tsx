@@ -18,7 +18,7 @@ const AppLayout: React.FC<Props> = ({ children, title }) => {
     <>
       <Head>
         <title>{pageTitle}</title>
-        <link rel="icon" href="/images/IMG_0247.jpg" />
+        <link rel="icon" href="/public/images/IMG_0247.jpg" />
       </Head>
       <div className="flex min-h-screen flex-col">
         <ScrollToTop

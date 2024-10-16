@@ -31,7 +31,7 @@ const ServiceSection = () => {
             key={index}
             className={classNames('rounded-2xl py-8 px-4 text-center shadow-md md:px-8', getBackgroundClass(index))}
           >
-            <Image src={service.image} height={80} width={80} alt={service.name} />
+            <Image src={service.image} height={80} width={80} alt={service.name} priority/>
             <h4 className="mt-4 text-xl font-semibold">{service.name}</h4>
             <p className="mt-4 text-justify">{service.description}</p>
           </div>

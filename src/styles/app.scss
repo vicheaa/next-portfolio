@@ -46,4 +46,11 @@ body {
       @apply text-primary-500;
     }
   }
+  .prose blockquote {
+    color: #4b5563; /* Default color for blockquote in light mode (text-gray-600) */
+  }
+  
+  .dark .prose blockquote {
+    color: #d1d5db; /* Lighter color for blockquote in dark mode (text-gray-300) */
+  }
 }

@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       <section className="container pt-20 pb-10">
         <AboutSection />
       </section>
-      <section className="container py-16">
+      <section className="container pt-10">
         <TechnologiesSection />
       </section>
       <section className="container py-16">

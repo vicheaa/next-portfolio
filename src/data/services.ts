@@ -9,12 +9,14 @@ export const services: Service[] = [
   },
   {
     name: 'UI/UX Design',
-    description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
+    description:
+      'I create designs that are both beautiful and easy to use. From wireframes to interactive prototypes, I build intuitive interfaces that guide users seamlessly and solve real problems.',
     image: '/images/services/ui-ux.png',
   },
   {
     name: 'DevOps',
-    description: 'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.',
+    description:
+      'After building a website, it also needs to be deployed to ensure it is live, accessible, and running smoothly for users.',
     image: '/images/services/mobile-app.png',
   },
 ];

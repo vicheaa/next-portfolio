@@ -1,13 +1,13 @@
 import React from 'react';
 import SectionTitle from '../shared/SectionTitle';
 import { FaLaravel, FaHtml5, FaCss3Alt, FaJsSquare, FaNodeJs, FaReact, FaDatabase } from 'react-icons/fa';
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma, SiLumen } from 'react-icons/si';
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiPrisma, SiLumen, SiPhp, SiNestjs} from 'react-icons/si';
 
 export default function TechnologiesSection() {
   const technologies = [
     { name: 'HTML', icon: <FaHtml5 /> },
     { name: 'CSS', icon: <FaCss3Alt /> },
-    { name: 'PHP', icon: <FaLaravel /> }, // You can use another icon for PHP
+    { name: 'PHP', icon: <SiPhp /> }, // You can use another icon for PHP
     { name: 'JavaScript', icon: <FaJsSquare /> },
     { name: 'TypeScript', icon: <SiTypescript /> },
     { name: 'React', icon: <FaReact /> },
@@ -17,6 +17,7 @@ export default function TechnologiesSection() {
     { name: 'Laravel', icon: <FaLaravel /> },
     { name: 'Lumen', icon: <SiLumen /> }, // You can choose a different icon for Lumen
     { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+    { name: 'Nest.js', icon: <SiNestjs /> },
     { name: 'Prisma', icon: <SiPrisma /> },
   ];
 

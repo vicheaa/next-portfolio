@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FiDribbble, FiFacebook, FiGithub, FiInstagram, FiTwitter } from 'react-icons/fi';
+import { PiTelegramLogo } from "react-icons/pi";
 import Button from '@/components/form/Button';
 import HeroBackground from './HeroBackground';
 import { Typewriter } from 'react-simple-typewriter';
@@ -47,27 +48,17 @@ const HeroSection = () => {
             </span>
           </div>
           <div className="mt-4  flex gap-5">
-            <Link href="https://www.instragram.com" legacyBehavior>
-              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-                <FiInstagram size={25} />
-              </a>
-            </Link>
-            <Link href="https://www.twitter.com" legacyBehavior> 
-              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-                <FiTwitter size={25} />
-              </a>
-            </Link>
-            <Link href="https://www.facebook.com" legacyBehavior>
+            <Link href="https://www.facebook.com/sarosereyvichea" legacyBehavior>
               <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
                 <FiFacebook size={25} />
               </a>
             </Link>
-            <Link href="https://www.dribble.com" legacyBehavior>
+            <Link href="https://t.me/SaroSereyvichea" legacyBehavior>
               <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
-                <FiDribbble size={25} />
+                <PiTelegramLogo size={25} />
               </a>
             </Link>
-            <Link href="https://www.github.com" legacyBehavior>
+            <Link href="https://www.github.com/vichea-tech" legacyBehavior>
               <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
                 <FiGithub size={25} />
               </a>

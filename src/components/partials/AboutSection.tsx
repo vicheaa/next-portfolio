@@ -59,7 +59,7 @@ const AboutSection = () => {
       </div>
 
       {/* Overview */}
-      <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
+      {/* <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
         <div className="flex">
           <div className="mr-5 text-gray-300">
             <HiOutlineFire size={50} />
@@ -98,7 +98,7 @@ const AboutSection = () => {
             <p className="mt-1">Years of experience</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

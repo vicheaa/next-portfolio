@@ -19,7 +19,7 @@ const Contact = (props: Props) => {
       >
         Contact
       </PageTitle>
-      <div className="container py-10">
+      {/* <div className="container py-10">
         <div className="grid gap-6 md:grid-cols-3">
           <div className="relative mb-10 h-48">
             <Image src="/images/map.svg" layout="fill" className="dark:invert" alt="map" />
@@ -52,7 +52,7 @@ const Contact = (props: Props) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </AppLayout>
   );
 };

@@ -6,6 +6,7 @@ import { PiTelegramLogo } from "react-icons/pi";
 import Button from '@/components/form/Button';
 import HeroBackground from './HeroBackground';
 import { Typewriter } from 'react-simple-typewriter';
+import { LuMailOpen } from 'react-icons/lu';
 
 const HeroSection = () => {
   const openTG = () => {
@@ -61,6 +62,11 @@ const HeroSection = () => {
             <Link href="https://www.github.com/vichea-tech" legacyBehavior>
               <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
                 <FiGithub size={25} />
+              </a>
+            </Link>
+            <Link href="mailto:sarosereyvichea@gmail.com" legacyBehavior>
+              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
+                <LuMailOpen size={25} />
               </a>
             </Link>
           </div>

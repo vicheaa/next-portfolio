@@ -6,7 +6,7 @@ import ProgressBar from '@/components/shared/ProgressBar';
 
 const AboutSection = () => {
   const getCV = () => {
-    window.open('https://drive.google.com/file/d/1G8hoT9NTHKOqgQwGTYNI5ibBFUK0edf6/view?usp=sharing', '_blank', 'noopener,noreferrer');
+    window.open('https://drive.google.com/file/d/1v9cr6n5wyl0DbSIBLZWM6bZf-sYhYfyY/view?usp=sharing', '_blank', 'noopener,noreferrer');
   }
   return (
     <>

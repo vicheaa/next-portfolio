@@ -9,6 +9,9 @@ import emailjs from 'emailjs-com';
 import { FiFacebook, FiGithub } from 'react-icons/fi';
 import Link from 'next/link';
 import { PiTelegramLogo } from 'react-icons/pi';
+import { CgMail } from 'react-icons/cg';
+import { IoMailOpenOutline } from 'react-icons/io5';
+import { LuMailOpen } from 'react-icons/lu';
 
 type Props = {};
 
@@ -79,6 +82,11 @@ const Contact = (props: Props) => {
         <Link href="https://www.github.com/vichea-tech" legacyBehavior>
           <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
             <FiGithub size={25} />
+          </a>
+        </Link>
+        <Link href="mailto:sarosereyvichea@gmail.com" legacyBehavior>
+          <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
+            <LuMailOpen size={25} />
           </a>
         </Link>
       </div>

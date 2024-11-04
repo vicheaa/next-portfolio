@@ -49,17 +49,17 @@ const HeroSection = () => {
           </div>
           <div className="mt-4  flex gap-5">
             <Link href="https://www.facebook.com/sarosereyvichea" legacyBehavior>
-              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
+              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
                 <FiFacebook size={25} />
               </a>
             </Link>
             <Link href="https://t.me/SaroSereyvichea" legacyBehavior>
-              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
+              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
                 <PiTelegramLogo size={25} />
               </a>
             </Link>
             <Link href="https://www.github.com/vichea-tech" legacyBehavior>
-              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500">
+              <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
                 <FiGithub size={25} />
               </a>
             </Link>

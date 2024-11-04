@@ -39,10 +39,10 @@ const Home: NextPage = () => {
       </section> 
       <section className="container py-16">
         <BlogSection />
-      </section>
+      </section> 
       <section className="container py-16">
         <ContactSection />
-      </section> */}
+      </section>*/}
     </AppLayout>
   );
 };

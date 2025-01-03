@@ -34,19 +34,7 @@ const Home: NextPage = () => {
       <section className="container py-16">
         <RecentWorkSection />
       </section>
-      {/* <section className="container py-16">
-        <TestimonialSection />
-      </section> 
-      <section className="container py-16">
-        <BlogSection />
-      </section> 
-      <section className="container py-16">
-        <ContactSection />
-      </section>*/}
-      <div style={styles.container}>
-        <h1>Welcome to My Real-Time Clock</h1>
-        <Clock />
-      </div>
+      <Clock />
     </AppLayout>
   );
 };
@@ -64,15 +52,4 @@ const Home: NextPage = () => {
 //     },
 //   };
 // };
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column' as 'column', // TypeScript requires explicit type for flexDirection
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundColor: '#f0f0f0',
-    fontFamily: 'Arial, sans-serif',
-  },
-};
 export default Home;

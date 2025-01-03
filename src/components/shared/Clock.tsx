@@ -19,20 +19,10 @@ const Clock: React.FC = () => {
   }, []);
 
   return (
-    <div style={styles.clock}>
+    <div className='text-[2rem] font-bold font-sans text-center my-20'>
       {time || 'Loading...'}
     </div>
   );
-};
-
-const styles = {
-  clock: {
-    fontSize: '2rem',
-    fontWeight: 'bold',
-    fontFamily: 'Arial, sans-serif',
-    textAlign: 'center',
-    marginTop: '20px',
-  },
 };
 
 export default Clock;

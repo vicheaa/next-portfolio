@@ -8,22 +8,13 @@ import ServiceSection from '@/components/partials/ServiceSection';
 import TechnologiesSection from '@/components/partials/TechnologiesSection';
 import TestimonialSection from '@/components/partials/TestimonialSection';
 import AppLayout from '@/layouts/AppLayout';
+import Clock from '@/components/shared/Clock';
 // import { api } from '@/lib/api';
 import type { GetServerSideProps, NextPage } from 'next';
 
 // type Props = {
 //   experiences: ;
 // }
-function updateClock() {
-  const now = new Date();
-  const hours = String(now.getHours()).padStart(2, '0');
-  const minutes = String(now.getMinutes()).padStart(2, '0');
-  const seconds = String(now.getSeconds()).padStart(2, '0');
-  document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
-}
-
-setInterval(updateClock, 1000); // Update clock every second
-updateClock(); // Initial call to display clock immediately
 const Home: NextPage = () => {
   return (
     <AppLayout title="Home">
@@ -52,7 +43,10 @@ const Home: NextPage = () => {
       <section className="container py-16">
         <ContactSection />
       </section>*/}
-      <div id="clock">00:00:00</div>
+      <div style={styles.container}>
+        <h1>Welcome to My Real-Time Clock</h1>
+        <Clock />
+      </div>
     </AppLayout>
   );
 };
@@ -70,5 +64,15 @@ const Home: NextPage = () => {
 //     },
 //   };
 // };
-
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column' as 'column', // TypeScript requires explicit type for flexDirection
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    backgroundColor: '#f0f0f0',
+    fontFamily: 'Arial, sans-serif',
+  },
+};
 export default Home;

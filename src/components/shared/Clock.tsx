@@ -21,7 +21,7 @@ const Clock: React.FC = () => {
   }, []);
 
   return (
-    <div className="text-4xl font-bold font-mono text-center my-12 text-blue-500">
+    <div className="text-4xl font-bold font-mono text-center my-12 text-black dark:text-gray-100">
       {time || "Loading..."}
     </div>
   );

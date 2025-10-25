@@ -1,5 +1,6 @@
 import PageTitle from '@/components/shared/PageTitle';
 import AppLayout from '@/layouts/AppLayout';
+import SEO from '@/components/shared/SEO';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Button from '@/components/form/Button';
@@ -59,77 +60,85 @@ const Contact = (props: Props) => {
   };
 
   return (
-    <AppLayout title="contact">
-      <PageTitle
-        breadcrumb={[
-          { label: 'Home', path: '/' },
-          { label: 'Contact', path: '' },
-        ]}
-      >
-        Contact
-      </PageTitle>
-      <div className="flex gap-5 m-auto justify-center">
-        <Link href="https://www.facebook.com/sarosereyvichea" legacyBehavior>
-          <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
-            <FiFacebook size={25} />
-          </a>
-        </Link>
-        <Link href="https://t.me/SaroSereyvichea" legacyBehavior>
-          <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
-            <PiTelegramLogo size={25} />
-          </a>
-        </Link>
-        <Link href="https://www.github.com/vichea-tech" legacyBehavior>
-          <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
-            <FiGithub size={25} />
-          </a>
-        </Link>
-        <Link href="mailto:sarosereyvichea@gmail.com" legacyBehavior>
-          <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
-            <LuMailOpen size={25} />
-          </a>
-        </Link>
-      </div>
-      <div className="container py-10">
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="relative mb-10 h-48">
-            <Image src="/images/map.svg" layout="fill" className="dark:invert" alt="map" />
-            <h6 className="text-2xl font-bold">Contact with me</h6>
-            <p className="mt-2">I would love to hear from you. 👋</p>
-            <div className="mt-10 text-gray-400">
-              <p>Phnom Penh, Cambodia</p>
-              <p className="mt-4">+855967771683</p>
-              <p>sarosereyvichea@gmail.com</p>
+    <>
+      <SEO
+        title="Contact SARO SEREYVICHEA - Full Stack Developer | Vichea"
+        description="Get in touch with SARO SEREYVICHEA (Vichea) for web development services. Contact the Full Stack Developer for Next.js, React, and Laravel projects. Located in Phnom Penh, Cambodia."
+        keywords="Contact Vichea, Contact Serey Vichea, SARO SEREYVICHEA contact, Full Stack Developer contact, Web Developer Cambodia, Hire developer, Next.js developer, React developer, Laravel developer"
+        canonicalUrl="/contact"
+      />
+      <AppLayout title="contact">
+        <PageTitle
+          breadcrumb={[
+            { label: 'Home', path: '/' },
+            { label: 'Contact', path: '' },
+          ]}
+        >
+          Contact
+        </PageTitle>
+        <div className="flex gap-5 m-auto justify-center">
+          <Link href="https://www.facebook.com/sarosereyvichea" legacyBehavior>
+            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
+              <FiFacebook size={25} />
+            </a>
+          </Link>
+          <Link href="https://t.me/SaroSereyvichea" legacyBehavior>
+            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
+              <PiTelegramLogo size={25} />
+            </a>
+          </Link>
+          <Link href="https://www.github.com/vichea-tech" legacyBehavior>
+            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
+              <FiGithub size={25} />
+            </a>
+          </Link>
+          <Link href="mailto:sarosereyvichea@gmail.com" legacyBehavior>
+            <a className="text-gray-700 transition-colors duration-150 hover:text-primary-500 dark:text-white dark:hover:text-primary-500">
+              <LuMailOpen size={25} />
+            </a>
+          </Link>
+        </div>
+        <div className="container py-10">
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="relative mb-10 h-48">
+              <Image src="/images/map.svg" layout="fill" className="dark:invert" alt="map" />
+              <h6 className="text-2xl font-bold">Contact with me</h6>
+              <p className="mt-2">I would love to hear from you. 👋</p>
+              <div className="mt-10 text-gray-400">
+                <p>Phnom Penh, Cambodia</p>
+                <p className="mt-4">+855967771683</p>
+                <p>sarosereyvichea@gmail.com</p>
+              </div>
+            </div>
+            <div className="col-span-2">
+              <form onSubmit={handleSubmit}>
+                <div className="grid gap-8 md:grid-cols-2">
+                  <Input name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} />
+                  <Input name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} />
+                </div>
+
+                <div className="mt-8">
+                  <Input name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
+                </div>
+                <div className="mt-8">
+                  <TextArea name="message" placeholder="Message" value={formData.message} onChange={handleChange} />
+                </div>
+                <div className="mt-8">
+                  <Button
+                    type="submit"
+                    disabled={loading}
+                    className="mt-5 bg-primary-500 px-8 font-semibold text-white hover:bg-primary-600 focus:ring-2 focus:ring-primary-200"
+                  >
+                    {loading ? 'Sending...' : 'Send Message'}
+                  </Button>
+                </div>
+                {responseMessage && <p className="mt-4 text-sm">{responseMessage}</p>}
+              </form>
             </div>
           </div>
-          <div className="col-span-2">
-            <form onSubmit={handleSubmit}>
-              <div className="grid gap-8 md:grid-cols-2">
-                <Input name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} />
-                <Input name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} />
-              </div>
-
-              <div className="mt-8">
-                <Input name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
-              </div>
-              <div className="mt-8">
-                <TextArea name="message" placeholder="Message" value={formData.message} onChange={handleChange} />
-              </div>
-              <div className="mt-8">
-                <Button
-                  type="submit"
-                  disabled={loading}
-                  className="mt-5 bg-primary-500 px-8 font-semibold text-white hover:bg-primary-600 focus:ring-2 focus:ring-primary-200"
-                >
-                  {loading ? 'Sending...' : 'Send Message'}
-                </Button>
-              </div>
-              {responseMessage && <p className="mt-4 text-sm">{responseMessage}</p>}
-            </form>
-          </div>
         </div>
-      </div>
-    </AppLayout>
+      </AppLayout>
+    </>
   );
 };
 

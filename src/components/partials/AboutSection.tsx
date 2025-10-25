@@ -6,8 +6,12 @@ import ProgressBar from '@/components/shared/ProgressBar';
 
 const AboutSection = () => {
   const getCV = () => {
-    window.open('https://drive.google.com/file/d/1v9cr6n5wyl0DbSIBLZWM6bZf-sYhYfyY/view?usp=sharing', '_blank', 'noopener,noreferrer');
-  }
+    window.open(
+      'https://drive.google.com/file/d/1v9cr6n5wyl0DbSIBLZWM6bZf-sYhYfyY/view?usp=sharing',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  };
   return (
     <>
       <SectionTitle>About Me</SectionTitle>
@@ -16,12 +20,15 @@ const AboutSection = () => {
         {/* Bio */}
         <div className="">
           <p className="text-justify">
-            Hi, I am SARO Sereyvichea, an ICT student with a passion for web development.
-            Currently pursuing my degree in Information and Communication Technology, 
-            I have gained hands-on experience in building dynamic web applications 
-            using technologies like Next.js, React, and Laravel.
+            Hi, I am <strong>SARO Sereyvichea</strong> (also known as <strong>Vichea</strong>), an ICT student with a
+            passion for web development. Currently pursuing my degree in Information and Communication Technology, I
+            have gained hands-on experience in building dynamic web applications using technologies like Next.js, React,
+            and Laravel. As a <strong>Full Stack Developer</strong>, I specialize in creating modern, responsive web
+            solutions that deliver exceptional user experiences.
           </p>
-          <Button className="mt-5" onClick={getCV}>Download CV</Button>
+          <Button className="mt-5" onClick={getCV}>
+            Download CV
+          </Button>
         </div>
 
         {/* Skills */}

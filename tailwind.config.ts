@@ -1,6 +1,7 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
-module.exports = {
+const config: Config = {
   important: true,
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
@@ -71,3 +72,5 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/typography')],
 };
+
+export default config;

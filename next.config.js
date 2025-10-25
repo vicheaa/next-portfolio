@@ -14,31 +14,17 @@ const nextConfig = {
       imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     },
     
-    // Headers for better SEO
-    async headers() {
-      return [
-        {
-          source: '/(.*)',
-          headers: [
-            {
-              key: 'X-Content-Type-Options',
-              value: 'nosniff',
-            },
-            {
-              key: 'X-Frame-Options',
-              value: 'DENY',
-            },
-            {
-              key: 'X-XSS-Protection',
-              value: '1; mode=block',
-            },
-            {
-              key: 'Referrer-Policy',
-              value: 'origin-when-cross-origin',
-            },
-          ],
-        },
-      ];
+    // Webpack configuration to fix module resolution
+    webpack: (config, { isServer }) => {
+      if (!isServer) {
+        config.resolve.fallback = {
+          ...config.resolve.fallback,
+          fs: false,
+          net: false,
+          tls: false,
+        };
+      }
+      return config;
     },
     
     // Redirects for SEO
